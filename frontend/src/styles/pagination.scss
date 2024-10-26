@@ -1,0 +1,33 @@
+.pagination {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: $lighter-gray;
+
+    @apply px-6 py-4 rounded-b-lg;
+  }
+
+  &__button {
+    @apply px-4 py-2 rounded;
+
+    &.disabled {
+      background: $gray;
+      color: $dark-gray;
+      cursor: not-allowed;
+    }
+
+    &.active {
+      background: $primary-color;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}

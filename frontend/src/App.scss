@@ -1,0 +1,22 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  @apply bg-gray-100 text-gray-800;
+}
+
+.app-box {
+  position: relative;
+  height: 600px;
+  background: white;
+
+  @apply mt-10 rounded-lg shadow-lg md:w-2/3 lg:w-1/2;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+  }
+}
